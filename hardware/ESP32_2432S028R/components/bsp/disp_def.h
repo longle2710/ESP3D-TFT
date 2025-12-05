@@ -82,13 +82,13 @@ esp_spi_ili9341_config_t display_spi_ili9341_cfg = {
              }
 
         },
-    .orientation = orientation_landscape,
+    .orientation = orientation_portrait,
     .hor_res = DISP_HOR_RES_MAX,
     .ver_res = DISP_VER_RES_MAX,
 };
 
 // Display backlight configuration
-#define DISP_BCKL_DEFAULT_DUTY 100  //%
+#define DISP_BCKL_DEFAULT_DUTY 50  //%
 
 const disp_backlight_config_t disp_bcklt_cfg = {.pwm_control = false,
                                                 .output_invert = false,

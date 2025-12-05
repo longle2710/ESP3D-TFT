@@ -1,0 +1,8 @@
+# 4MB Flash - Single APP (No OTA):
+#  * 1x 3.75MB APP
+#  * 192KB FS
+#
+# Name,  Type, SubType, Offset,  Size,     Flags
+nvs,     data, nvs,     0x9000,  0x5000,
+app0,    app,  factory, 0x10000, 0x3C0000,
+flashfs, data, spiffs,  ,        0x30000,

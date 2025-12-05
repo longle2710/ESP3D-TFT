@@ -35,7 +35,7 @@ ESP3DRenderingClient renderingClient;
 
 #define RX_FLUSH_TIME_OUT 1500  // milliseconds timeout
 
-#define ESP3D_POLLING_INTERVAL 3000  // milliseconds
+#define ESP3D_POLLING_INTERVAL 15000  // milliseconds
 
 // this task only collecting rendering RX data and push thenmm to Rx Queue
 static void esp3d_rendering_rx_task(void *pvParameter) {

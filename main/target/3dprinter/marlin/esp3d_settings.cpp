@@ -175,9 +175,9 @@ const ESP3DSettingDescription ESP3DSettingsData[] = {
     {ESP3DSettingIndex::esp3d_inverved_y, ESP3DSettingType::byte_t, 1, "0"},
     {ESP3DSettingIndex::esp3d_auto_level_on, ESP3DSettingType::byte_t, 1, "0"},
     {ESP3DSettingIndex::esp3d_bed_width, ESP3DSettingType::float_t, 3,
-     "100.00"},
+     "200.00"},
     {ESP3DSettingIndex::esp3d_bed_depth, ESP3DSettingType::float_t, 3,
-     "100.00"},
+     "200.00"},
 #endif  // ESP3D_DISPLAY_FEATURE
     {ESP3DSettingIndex::esp3d_stop_script, ESP3DSettingType::string_t,
      SIZE_OF_SCRIPT, ""},

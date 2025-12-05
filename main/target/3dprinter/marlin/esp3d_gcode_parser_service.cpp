@@ -223,8 +223,15 @@ bool ESP3DGCodeParserService::processCommand(const char* data) {
         char* ptrtt = ptre + 2;
         ptre = strstr(ptrtt, " ");
         if (!ptre) {
-          esp3d_log_e("Error parsing temperature Bed target");
-          return false;
+          // If no space found, look for end of line
+          ptre = strstr(ptrtt, "\r");
+          if (!ptre) {
+            ptre = strstr(ptrtt, "\n");
+          }
+          if (!ptre) {
+            esp3d_log_e("Error parsing temperature Bed target");
+            return false;
+          }
         }
         ptre[0] = '\0';
         // Dispatch values
