@@ -88,9 +88,9 @@ esp_spi_ili9341_config_t display_spi_ili9341_cfg = {
 };
 
 // Display backlight configuration
-#define DISP_BCKL_DEFAULT_DUTY 100  //%
+#define DISP_BCKL_DEFAULT_DUTY 50  //%
 
-const disp_backlight_config_t disp_bcklt_cfg = {.pwm_control = false,
+const disp_backlight_config_t disp_bcklt_cfg = {.pwm_control = true,
                                                 .output_invert = false,
                                                 .gpio_num = 45,  // GPIO 45
                                                 .timer_idx = 0,
