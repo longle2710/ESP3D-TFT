@@ -23,8 +23,8 @@ const ft5x06_config_t ft5x06_cfg = {
     .swap_xy = true,
     .invert_x = false,
     .invert_y = false,
-    .x_max = 320,
-    .y_max = 480,
+    .x_max = 240,
+    .y_max = 320,
 };
 
 #ifdef __cplusplus

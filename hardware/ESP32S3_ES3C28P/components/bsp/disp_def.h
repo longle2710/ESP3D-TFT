@@ -44,7 +44,7 @@ esp_spi_ili9341_config_t display_spi_ili9341_cfg = {
             .pin_clk = 12,                        /**< CLK pin number */
             .is_master = true,                    /**< SPI master mode */
             .max_transfer_sz = DISP_BUF_SIZE * 2, /**< Maximum transfer size */
-            .dma_channel = 1,                     /**< DMA channel */
+            .dma_channel = SPI_DMA_CH_AUTO,       /**< DMA channel (auto-allocate) */
             .quadwp_io_num = -1,                  /**< QuadWP pin number */
             .quadhd_io_num = -1                   /**< QuadHD pin number */
         },
